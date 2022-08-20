@@ -8,10 +8,12 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    
+    
+    @IBOutlet weak var emailTextFiel: UITextField!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
     }
     
     
@@ -25,7 +27,7 @@ class ViewController: UIViewController {
     
     func confirmarLogin() {
 
-        let alert = UIAlertController(title: "Logando", message: "Fazendo login na sua conta <Add conta>", preferredStyle: .alert)
+        let alert = UIAlertController(title: "Logando", message: "Fazendo login na sua conta \(emailTextFiel.text!)", preferredStyle: .alert)
         
         alert.addAction(UIAlertAction(title: "Ok", style: .cancel, handler: nil))
 
@@ -35,7 +37,7 @@ class ViewController: UIViewController {
     
     func redefinirSenha() {
 
-        let alert = UIAlertController(title: "Redefinir senha", message: "Enviamos um email para <conta>.\nSiga as instruções para criar uma nova senha segura.", preferredStyle: .alert)
+        let alert = UIAlertController(title: "Redefinir senha", message: "Enviamos um email para \(emailTextFiel.text!).\nSiga as instruções para criar uma nova senha segura.", preferredStyle: .alert)
         
         alert.addAction(UIAlertAction(title: "Ok", style: .cancel, handler: nil))
 
