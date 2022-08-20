@@ -20,6 +20,7 @@ class ViewController: UIViewController {
     }
     
     @IBAction func EsqueciSenhaButton(_ sender: UIButton) {
+        redefinirSenha()
     }
     
     func confirmarLogin() {
@@ -31,6 +32,17 @@ class ViewController: UIViewController {
         self.present(alert, animated: true, completion:nil)
 
     }
+    
+    func redefinirSenha() {
+
+        let alert = UIAlertController(title: "Redefinir senha", message: "Enviamos um email para <conta>.\nSiga as instruções para criar uma nova senha segura.", preferredStyle: .alert)
+        
+        alert.addAction(UIAlertAction(title: "Ok", style: .cancel, handler: nil))
+
+        self.present(alert, animated: true, completion:nil)
+
+    }
+    
 
     
 }
