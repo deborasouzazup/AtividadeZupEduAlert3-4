@@ -16,10 +16,22 @@ class ViewController: UIViewController {
     
     
     @IBAction func LoginButton(_ sender: UIButton) {
+        confirmarLogin()
     }
     
     @IBAction func EsqueciSenhaButton(_ sender: UIButton) {
     }
+    
+    func confirmarLogin() {
+
+        let alert = UIAlertController(title: "Logando", message: "Fazendo login na sua conta <Add conta>", preferredStyle: .alert)
+        
+        alert.addAction(UIAlertAction(title: "Ok", style: .cancel, handler: nil))
+
+        self.present(alert, animated: true, completion:nil)
+
+    }
+
     
 }
 
