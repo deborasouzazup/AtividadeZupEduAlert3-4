@@ -106,6 +106,9 @@
                             <constraint firstItem="qDN-fE-PHb" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="32" id="iFq-YN-dGf"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="emailTextFiel" destination="0aK-B0-JPT" id="Z9j-2m-tDN"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
